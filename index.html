@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<!-- The following lines are comments
+
+Author            :     John Lucaci
+
+Date created      :     09/03/20
+
+Page Description  :     This is the hompage. It includes a Navigation Bar with links to 
+                        each of the other pages. The background includes a video, and the
+                        page content contains a brief introduction to the world of
+                        Photography.
+-->
+	
+<html lang="en"> <!-- Declare the primary language for each web page-->
+<head>
+    <style>
+    #myVideo {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(15px);
+}
+    </style>
+	<meta charset="utf-8"> <!--8-bit character encoding capable of encoding all possible characters-->
+	<meta name="description" content="Beauty of Photography">
+	<meta name="keywords" content="Photography, Photo, Nikon, Canon, Sony, Fujifilm, Panasonic, Adobe, Lightroom, Photoshop, Edit, Retouching, JPEG, NEF, RAW">
+	<meta name="author" content="John Lucaci">
+	<title>Beauty of Photography</title>
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="icon" href="images/camera_logo.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body> <!-- Body tag start of body section display on screen -->
+    <header>
+        <a href="index.html"><img src="images/camera_logo.png" alt="logo" width="6.5%" style="padding: .6%; float: left;"></a>
+        <a href="index.html"><img src="images/logotext.png" alt="logo" style="float: left; margin-top: 0.3%;" width="25%"></a>
+        <nav>
+            <a href="index.html" style="text-decoration:underline;">Home</a> 
+            <a href="aboutUs.html">About us</a>
+            <a href="cameras.html">Cameras</a>
+            <a href="editing.html">Editing</a>
+            <a href="tips.html">Tips</a>
+            <a href="contactUs.html">Contact us</a>
+        </nav>
+    </header>
+<main>
+<video autoplay muted loop id="myVideo">
+  <source src="video/jungle.webm" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+    <section id="welcomeContent" class="fade-in">
+        <h1 style="font-family: cursive;">Welcome to the Beautiful World of Photography</h1>
+        <h3 style="font-family: cursive;">Click the Explore button below to dive into it...</h3>
+        <a href="explore.html"><img class="imageHover" src="images/button_explore.png" alt="explorebutton" style="margin-bottom: 16.5%;"></a>
+    </section>
+</main>
+<footer>&copy;Copyright 2020<a href="contactUs.html">Contact us</a><a href="tips.html">Tips</a><a href="editing.html">Editing</a><a href="cameras.html">Cameras</a><a href="aboutUs.html">About us</a><a href="index.html" style="text-decoration:underline;">Home</a></footer>
+</body>
+</html>
